@@ -1,0 +1,16 @@
+//Nama file: Mlingkaran.java
+//Pembuat: Naufal Arya Ramadhan
+//Deskripsi: File main untuk menguji kelas Lingkaran
+
+import java.util.Scanner;
+
+public class MLingkaran {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Masukkan panjang jari-jari lingkaran : ");
+        double jari = scan.nextDouble();
+        Lingkaran lr = new Lingkaran(jari);
+        scan.close();
+        System.out.println("Luas lingkaran dengan jejari "+ jari + " satuan adalah : "+ lr.hitungLuas());
+    }
+}
